@@ -555,6 +555,6 @@ def train_NN_test_5():
 
     np.testing.assert_allclose(expected_val_acc, actual_val_acc, rtol=0, atol=ABSOLUTE_TOLERANCE)
 
-train_NN_tests.add_test(Test("Testing train_NN neural network train accuracies", train_NN_test_5))
+train_NN_tests.add_test(Test("Testing train_NN neural network validation accuracies", train_NN_test_5))
 
 
