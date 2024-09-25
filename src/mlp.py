@@ -82,6 +82,7 @@ class Linear(Transform):
         self.grad_wrt_W = None # This will be set in the backward pass (the __init__ function shouldn't touch this)
         self.grad_wrt_b = None # This will be set in the backward pass (the __init__ function shouldn't touch this)
         # STUDENT SOLUTION START
+        # Note: b should be a one-dimensional array (not 2 dimensional!)
         raise NotImplementedError()
         # STUDENT SOLUTION END
     
@@ -115,6 +116,7 @@ class Linear(Transform):
         You should store the AVERAGE of the gradients across the batch.
         """
         # STUDENT SOLUTION START
+        # Note: self.grad_wrt_W and self.grad_wrt_b should have the same dimensions as self.W and self.b respectively
         raise NotImplementedError()
         # STUDENT SOLUTION END
     
